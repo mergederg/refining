@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Backlog Refining</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section data-auto-animate style="height: 600px">
+            <h2 data-id="title">Improving Tickets With Backlog Refining</h2>
+            <p>Better tickets and processes can...</p>
+            <ul>
+                <li>Reduce ticket times and turnover</li>
+                <li>Identify and deal with requirements issues earlier</li>
+                <li>Facilitate estimation prior to work</li>
+                <li>Make everyone happier!</li>
+            </ul>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">What is it?</h2>
+            <p><Strong>Refining: </Strong>Product owner/project management and devs reviewing upcoming work for
+                do-ability and assigning
+                estimates on time or complexity via voting.</p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Why do it?</h2>
+            <p>Ensure the board/backlog/task list (whatever we want to call the set of things developers pull from in
+                their day to day activities) remains populated with items that are <em>relevant</em>, <em>detailed</em>,
+                <em>actionable</em> and <em>roughly estimated</em>.</p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Why do it?</h2>
+            <p>The feedback cycle at development is far longer than it can be in refining meetings, so person-hours
+                stand to be saved by shifting those conversations there prior to them ever becoming dev assignments.
+                Remember the graph from last time!</p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Why do it?</h2>
+            <p>Apart from improving ticket quality, this process also produces estimates (as time or complexity,
+                according to org preferences) out of the process for 'free', doing away with the need for the "how long
+                will this take?" phase many of our tickets go through upon first landing on a dev's board.</p>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">Process</h2>
+            <ul>
+                <li>Anyone can put new tickets in the backlog to be refined for a round of development.</li>
+                <li>Once the list of tickets is complete, a refining meeting allowing for ~3-5 minutes per ticket is
+                    scheduled.
+                </li>
+                <li>Developers check this list and take a look at the areas of code, data models and plugins in question
+                    to be able to make an informed estimate on it. They also review the proposed tickets for ambiguity
+                    and unmet dependencies.
+                </li>
+            </ul>
+        </section>
+        <section data-auto-animate>
+            <h2 data-id="title">The Refining Meeting</h2>
+            <small>
+                <ul>
+                    <li>Tickets are reviewed and pointed one by one.</li>
+                    <ul>
+                        <li><em>Reading the ticket</em>: Hopefully people have already done this.</li>
+                        <li><em>Discussion</em>: Developers raise any issues with the ticket or questions they have
+                            about the task. If dependencies are unmet (for example, calling for setup ), enablement
+                            tickets for those dependencies have to be created and executed first prior to the ticket
+                            under discussion being actionable.
+                        </li>
+                        <li><em>Pointing/Estimating</em>: Once no questions are outstanding on a ticket, developers vote
+                            (<a href="https://www.planningpoker.com/" target="_blank">planning poker</a> or physical
+                            cards) on an estimate. Different strategies exist as to what this number represents and how
+                            it is rendered down to one estimate -- some teams take the highest, some take the lowest,
+                            others take the mean, median or mode, but the important thing is that its an informed
+                            decision made by the development group on a now-refined ticket with as full a transfer of
+                            requirements as possible from stakeholders.
+                        </li>
+                    </ul>
+                </ul>
+            </small>
+        </section>
+    </div>
+</div>
+
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+</script>
+</body>
+</html>
